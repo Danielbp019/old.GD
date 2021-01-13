@@ -20,30 +20,11 @@
     <link rel="shortcut icon" href="img/candle.ico" />
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="1">
-    <header>
-        <div class="main">
-            <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
-                <a class="navbar-brand" style="font-family: 'Cookie', cursive; font-size: xx-large; color: gold;" href="index.html">Geek Dungeon</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto">
-                        <!--space for more links-->
-                    </ul>
-                    <ul class="navbar-nav navbar-right">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#pdf">Macros</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+<!--data spy para iluminar la opcion del menu cuando se desplace-->
 
+<body data-spy="scroll" data-target=".navbar" data-offset="1">
+
+    <header>
         <div class="overlay"></div>
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
             <source src="video/video1080.mp4" type="video/mp4">
@@ -55,14 +36,39 @@
                     <h1 class="display-3" style="font-family: 'Cookie', cursive;">Geek Dungeon</h1>
                     <p class="lead mb-0">Una marca más de “ups no era ese botón”</p>
                     <br />
-                    <a class="btn btn-lg btn-danger" role="button" href="w10error.html">No me pulses!</a>
+                    <a class="btn btn-lg btn-danger" role="button" href="error.html">No me pulses!</a>
                 </div>
             </div>
         </div>
-
     </header>
 
-    <main role="main" style="padding-top: 50px;">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+        <a class="navbar-brand" style="font-family: 'Cookie', cursive; font-size: xx-large; color: gold;" href="index.html">Geek Dungeon</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <!--space for more links-->
+            </ul>
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="#historia">¿Qué es esta página?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#macros">Macros WoW</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu2">Opciones gráficas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu3">Nada!</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main" style="padding-top: 60px;">
 
         <!-- Marketing messaging and featurettes
   ================================================== -->
@@ -70,18 +76,19 @@
 
         <div class="container marketing">
 
-            <section id="pdf">
-                <div class="row container-fluid slideanim">
+            <section>
+                <div class="row container-fluid slideanim" id="historia">
                     <div class="col-md-12">
                         <h2>¿Qué es esta página?</h2>
                         <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
                         <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
                         <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
                         <!-- centrada con boostrap-->
-                        <img src="img/31gv.gif" class="rounded mx-auto d-block">
+                        <img src="img/31gv.gif" class="rounded mx-auto d-block" class="img-fluid" loading="lazy">
                     </div>
                 </div>
             </section>
+
             <br />
             <br />
 
