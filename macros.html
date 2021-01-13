@@ -7,58 +7,24 @@
     <meta name="author" content="Daniel Bautista">
     <title>Geek Dungeon</title>
 
-<<<<<<< Updated upstream
     <!--Bootstrap-->
-    <link href="bootstrap-4.5.0-dist/css/bootstrap.min.css" rel="stylesheet">
-    <!--normalizar estilos-->
-=======
-    <!--    Bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <!--    Normalizar estilos-->
->>>>>>> Stashed changes
+    <!--normalizar estilos-->
     <link href="css/normalize.css" rel="stylesheet">
-    <!--    Custom styles for this template -->
+    <!-- Custom styles for this template -->
     <link href="css/geekdungeon.css" rel="stylesheet">
-    <!--    Fonts-->
+    <!--fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cookie&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
-    <!--    Favicon-->
+    <!--favicon-->
     <link rel="shortcut icon" href="img/candle.ico" />
-
 </head>
 
-<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
-    <a class="navbar-brand" style="font-family: 'Cookie', cursive; font-size: xx-large; color: gold;" href="index.html">Geek Dungeon</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-            <!--space for more links-->
-        </ul>
-        <ul class="navbar-nav navbar-right">
-            <li class="nav-item">
-                <a class="nav-link" href="#historia">¿Qué es esta página?</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#macros">Macros WoW</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#menu2">Opciones gráficas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#menu3">Nada!</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="1">
     <header>
-<<<<<<< Updated upstream
         <div class="main">
             <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
-                <a class="navbar-brand" style="font-family: 'Cookie', cursive; font-size: xx-large; color: gold;">Geek Dungeon</a>
+                <a class="navbar-brand" style="font-family: 'Cookie', cursive; font-size: xx-large; color: gold;" href="index.html">Geek Dungeon</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -79,11 +45,8 @@
         </div>
 
         <div class="overlay"></div>
-=======
-        <div class="overlay" id="top"></div>
->>>>>>> Stashed changes
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <source src="video1080.mp4" type="video/mp4">
+            <source src="video/video1080.mp4" type="video/mp4">
         </video>
 
         <div class="container h-100">
@@ -92,39 +55,37 @@
                     <h1 class="display-3" style="font-family: 'Cookie', cursive;">Geek Dungeon</h1>
                     <p class="lead mb-0">Una marca más de “ups no era ese botón”</p>
                     <br />
-                    <a class="btn btn-lg btn-danger" role="button" href="error.html">No me pulses!</a>
+                    <a class="btn btn-lg btn-danger" role="button" href="w10error.html">No me pulses!</a>
                 </div>
             </div>
         </div>
+
     </header>
 
-    <main role="main" class="container">
+    <main role="main" style="padding-top: 50px;">
 
         <!-- Marketing messaging and featurettes
   ================================================== -->
         <!-- Wrap the rest of the page in another container to center all the content. -->
 
-        <div class="container" style="padding-top: 5rem;">
+        <div class="container marketing">
 
-            <section>
-                <div class="row container-fluid slideanim" id="historia">
+            <section id="pdf">
+                <div class="row container-fluid slideanim">
                     <div class="col-md-12">
                         <h2>¿Qué es esta página?</h2>
                         <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
                         <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
                         <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-<<<<<<< Updated upstream
-=======
                         <!-- centrada con boostrap-->
-                        <img src="img/31gv.gif" class="rounded mx-auto d-block" class="img-fluid" loading="lazy">
->>>>>>> Stashed changes
+                        <img src="img/31gv.gif" class="rounded mx-auto d-block">
                     </div>
                 </div>
             </section>
             <br />
             <br />
 
-            <iframe src="Mis%20amigas%20las%20macros%20WoW.pdf#toolbar=0" width="100%" height="600px" loading="lazy">
+            <iframe src="docs/Mis%20amigas%20las%20macros%20WoW.pdf#toolbar=0" width="100%" height="600px" loading="lazy">
             </iframe>
 
             <hr class="featurette-divider">
@@ -142,7 +103,7 @@
 
         <!--    FOOTER -->
         <footer class="container text-center">
-            <p>Desarrollo hecho por <span style="font-family: 'Alex Brush', cursive; font-size: 27px">Daniel Bautista P.</span> &middot; Tecnólogo de Sistemas, 2019.</p>
+            <p>Desarrollo hecho por <span style="font-family: 'Alex Brush', cursive; font-size: 27px">Daniel Bautista P.</span> &middot; Tecnólogo de Sistemas, 2019-2021.</p>
             <div id="google_translate_element"></div>
             <script type="text/javascript">
                 function googleTranslateElementInit() {
@@ -157,19 +118,14 @@
         </footer>
     </main>
 
-    <!--    Bootstrap-->
+    <!--    jquery para efecto y boostrap-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+    <!--    Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     <!--    Sacados para acortar-->
     <script src="js/scripts.js"></script>
-    <script language="JavaScript">
-        function pantallacompleta(pagina) {
-            var opciones = ("toolbar=no,location=no, directories=no, status=no, menubar=no ,scrollbars=no, resizable=no, fullscreen=yes");
-            window.open(pagina, "", opciones);
-        }
 
-    </script>
 </body>
 
 </html>

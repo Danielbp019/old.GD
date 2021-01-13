@@ -56,6 +56,3 @@ $(document).ready(function () {
         } // End if
     });
 });
-
-/* Boton a pantalla completa
- -------------------------------------------------- */
