@@ -1,2 +1,2 @@
 # GD
- Pagina en HTML
+ Prueba en HTML para git pages.
