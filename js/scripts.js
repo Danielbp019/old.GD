@@ -71,3 +71,9 @@ function deferVideo() {
     });
 }
 window.onload = deferVideo;
+
+/* Video en el jumbotron
+ -------------------------------------------------- */
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+})

@@ -100,15 +100,20 @@
         <div class="container slideanim">
             <div class="card-deck">
                 <div class="card">
-                    <img src="img/250-250/code.jpg" class="img-thumbnail" loading="lazy">
+                    <img src="img/codigo.jpg" class="card-img-top" loading="lazy" width="200" height="250">
                     <div class="card-body">
                         <h5 class="card-title">Guía de macros WoW.</h5>
                         <p class="card-text">Esta es una recopilación de una guía muy completa actualizada hasta la versión 5.1 del juego que en su momento encontré ya hace varios años, por cosas de la vida volví a necesitarla y me topé con que ya no descansaba donde fue creada. Por eso me di a la tarea de poner ese trabajo a buen recaudo y volverlo a traer a la vista de todos, agregando algunas cosas y complementando otras.</p>
-                        <p><a class="btn btn-primary" href="#" role="button">Ir al documento &raquo;</a></p>
+
+                        <!-- Button trigger modal 1 -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop1">
+                            Ir al documento &raquo;
+                        </button>
+
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/250-250/masterrace.png" class="img-thumbnail" loading="lazy">
+                    <img src="img/zone.jpg" class="card-img-top" loading="lazy" width="200" height="250">
                     <div class="card-body">
                         <h5 class="card-title">Opciones gráficas de los videojuegos.</h5>
                         <p class="card-text">Aquí está un documento que me tomó mucho tiempo hacer, se trata de una lista que aún está en proceso porque la tecnología nunca se detiene. Esta lista contiene todas las opciones gráficas que puedes encontrar en los videojuegos con sus explicaciones, carga en el sistema y tecnologías.</p>
@@ -116,7 +121,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/250-250/proce.png" class="img-thumbnail" loading="lazy">
+                    <img src="img/inside.jpg" class="card-img-top" loading="lazy" width="200" height="250">
                     <div class="card-body">
                         <h5 class="card-title">¿Y que habrá en el tercer enlace?</h5>
                         <p class="card-text">En este apartado no hay nada aún, está esperando ser llenado con alguna cosa curiosa o algún otro tipo de información. Y... ¿por qué no quito este espacio? pues...Se ve bonito así que ahí se queda.</p>
@@ -128,8 +133,33 @@
         </div>
         <!-- /fin de seccion -->
 
-        <br>
+        <!--Ventanas Modal abajo *****************************************************************************************-->
 
+        <!-- Modal 1-->
+        <div class="modal fade" id="staticBackdrop1" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe src="docs/Mis%20amigas%20las%20macros%20WoW.pdf#toolbar=0" width="100%" height="500px" loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Ventanas Modal arriba *****************************************************************************************-->
+
+
+        <br>
     </main>
 
     <!--    Boton de ir arriba-->

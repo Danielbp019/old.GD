@@ -1,8 +1,10 @@
 /* Move down content because we have a fixed navbar that is 3.5rem tall */
 body {
     padding-top: 3.5rem;
-    position: relative;
     /*scrollspy*/
+    position: relative;
+    background-image: url(../img/fondoT.jpg);
+    background-repeat: repeat;
 }
 
 /* Video de fondo en jumbotron
