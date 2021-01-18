@@ -22,7 +22,7 @@
 
 <!--data spy para iluminar la opcion del menu cuando se desplace-->
 
-<body data-spy="scroll" data-target=".navbar" data-offset="1">
+<body data-spy="scroll" data-target="#navegacion" data-offset="1">
 
     <header>
         <div class="overlay"></div>
@@ -42,7 +42,7 @@
         </div>
     </header>
 
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+    <nav id="navegacion" class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
         <a class="navbar-brand" style="font-family: 'Cookie', cursive; font-size: xx-large; color: gold;" href="index.html">Geek Dungeon</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -89,11 +89,71 @@
                 </div>
             </section>
 
-            <br />
-            <br />
+            <!-- START THE FEATURETTES -->
 
-            <iframe src="docs/Mis%20amigas%20las%20macros%20WoW.pdf#toolbar=0" width="100%" height="600px" loading="lazy">
-            </iframe>
+            <hr class="featurette-divider">
+
+            <section>
+                <div class="row featurette slideanim" id="macros">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Guía de macros WoW. <span class="text-muted">¡Toda la información que siempre quisiste!</span></h2>
+                        <p class="lead">Esta es una recopilación de una guía muy completa actualizada hasta la versión 5.1 del juego que en su momento encontré ya hace varios años, por cosas de la vida volví a necesitarla y me topé con que ya no descansaba donde fue creada. Por eso me di a la tarea de poner ese trabajo a buen recaudo y volverlo a traer a la vista de todos, agregando algunas cosas y complementando otras.</p>
+                        <a href="macros.html" type="button" class="btn btn-primary">Ir al documento</a>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="img/codigo.jpg" width="500" height="500" class="img-fluid" loading="lazy" />
+                    </div>
+                </div>
+            </section>
+
+            <hr class="featurette-divider">
+
+            <section>
+                <div class="row featurette slideanim" id="menu2">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Opciones gráficas de los videojuegos. <span class="text-muted">(Por fin alguien lo explica.) </span></h2>
+                        <p class="lead">Aquí está un documento que me tomó mucho tiempo hacer, se trata de una lista que aún está en proceso porque la tecnología nunca se detiene. Esta lista contiene todas las opciones gráficas que puedes encontrar en los videojuegos con sus explicaciones, carga en el sistema y tecnologías.</p>
+                        <a href="macros.html" type="button" class="btn btn-primary">Ir al documento</a>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img src="img/inside.jpg" width="500" height="500" class="img-fluid" loading="lazy" />
+                    </div>
+                </div>
+            </section>
+
+            <hr class="featurette-divider">
+
+            <section>
+                <div class="row featurette slideanim" id="menu3">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">¿Y que habrá en el tercer enlace? <span class="text-muted">Pues nada! </span></h2>
+                        <p class="lead">En este apartado no hay nada aún, está esperando ser llenado con alguna cosa curiosa o algún otro tipo de información. Y... ¿por qué no quito este espacio? pues...Se ve bonito así que ahí se queda.</p>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            Ir al documento
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <strong>Te lo dije, aquí no hay nada.</strong>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-5">
+                        <img src="img/proce.jpg" width="500" height="500" class="img-fluid" loading="lazy" />
+                    </div>
+                </div>
+            </section>
 
             <hr class="featurette-divider">
 

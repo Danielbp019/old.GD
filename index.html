@@ -1,191 +1,194 @@
 <!doctype html>
-<html lang="es-ES">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Daniel Bautista">
-    <title>Geek Dungeon</title>
+    <meta name="description" content="">
+    <meta name="author" content="Daniel B. P.">
+    <title>Geek Dungeon!</title>
 
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <!--normalizar estilos-->
     <link href="css/normalize.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="css/geekdungeon.css" rel="stylesheet">
     <!--fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cookie&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
     <!--favicon-->
     <link rel="shortcut icon" href="img/candle.ico" />
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron.css" rel="stylesheet">
 </head>
 
-<!--data spy para iluminar la opcion del menu cuando se desplace-->
+<body data-spy="scroll" data-target="#barranav">
 
-<body data-spy="scroll" data-target="#navegacion" data-offset="1">
-
-    <header>
-        <div class="overlay"></div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <source src="video/video1080.mp4" type="video/mp4">
-        </video>
-
-        <div class="container h-100">
-            <div class="d-flex h-100 text-center align-items-center">
-                <div class="w-100 text-white">
-                    <h1 class="display-3" style="font-family: 'Cookie', cursive;">Geek Dungeon</h1>
-                    <p class="lead mb-0">Una marca más de “ups no era ese botón”</p>
-                    <br />
-                    <a class="btn btn-lg btn-danger" role="button" href="error.html">No me pulses!</a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <nav id="navegacion" class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
-        <a class="navbar-brand" style="font-family: 'Cookie', cursive; font-size: xx-large; color: gold;" href="index.html">Geek Dungeon</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="barranav">
+        <a class="navbar-brand" href="index.html" style="font-family: 'Cookie', cursive; font-size: xx-large; color: gold;">Geek Dungeon</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="collapse navbar-collapse" id="navbarPrincipal">
             <ul class="navbar-nav mr-auto">
-                <!--space for more links-->
-            </ul>
-            <ul class="navbar-nav navbar-right">
                 <li class="nav-item">
                     <a class="nav-link" href="#historia">¿Qué es esta página?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#macros">Macros WoW</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#menu2">Opciones gráficas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#menu3">Nada!</a>
+                    <a class="nav-link" href="#temas">Temas</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <main role="main" style="padding-top: 60px;">
+    <main role="main">
 
-        <!-- Marketing messaging and featurettes
-  ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron jumbotron-fluid">
 
-        <div class="container marketing">
+            <video autoplay muted loop poster="video/fondocelular.jpg">
+                <source src="" data-src="video/video1080.mp4" type="video/mp4">
+            </video>
 
-            <section>
-                <div class="row container-fluid slideanim" id="historia">
-                    <div class="col-md-12">
-                        <h2>¿Qué es esta página?</h2>
-                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                        <!-- centrada con boostrap-->
-                        <img src="img/31gv.gif" class="rounded mx-auto d-block" class="img-fluid" loading="lazy">
+            <div class="container text-white text-center">
+                <h1 class="display-4" style="font-family: 'Cookie', cursive;">Hola, Geek Dungeon!</h1>
+                <hr class="my-4">
+                <p class="lead">Una marca más de “ups no era ese botón”.</p>
+                <hr class="my-4">
+                <a class="btn btn-danger btn-lg" href="error.html" role="button">No me pulses!</a>
+            </div>
+            <!-- /.container -->
+        </div><!-- /.jumbotron -->
+
+        <!-- nueva seccion -->
+        <a id="historia"></a>
+        <br>
+        <br>
+        <br>
+        <div class="container slideanim">
+            <h2>¿Qué es esta página?</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <!-- centrada con boostrap-->
+            <img src="img/31gv.gif" class="rounded mx-auto d-block" class="img-fluid" loading="lazy">
+            <hr>
+        </div> <!-- /fin de seccion -->
+
+        <!-- nueva seccion -->
+        <a id="temas"></a>
+        <br>
+        <br>
+        <br>
+        <div class="container slideanim">
+            <div class="card-deck">
+                <div class="card">
+                    <img src="img/codigo.jpg" class="card-img-top" loading="lazy" width="200" height="250">
+                    <div class="card-body">
+                        <h5 class="card-title">Guía de macros WoW.</h5>
+                        <p class="card-text">Esta es una recopilación de una guía muy completa actualizada hasta la versión 5.1 del juego que en su momento encontré ya hace varios años, por cosas de la vida volví a necesitarla y me topé con que ya no descansaba donde fue creada. Por eso me di a la tarea de poner ese trabajo a buen recaudo y volverlo a traer a la vista de todos, agregando algunas cosas y complementando otras.</p>
+                        <p><a class="btn btn-primary" href="MisamigaslasmacrosWoW.html" role="button">Ir al documento &raquo;</a></p>
                     </div>
                 </div>
-            </section>
-
-            <!-- START THE FEATURETTES -->
-
-            <hr class="featurette-divider">
-
-            <section>
-                <div class="row featurette slideanim" id="macros">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">Guía de macros WoW. <span class="text-muted">¡Toda la información que siempre quisiste!</span></h2>
-                        <p class="lead">Esta es una recopilación de una guía muy completa actualizada hasta la versión 5.1 del juego que en su momento encontré ya hace varios años, por cosas de la vida volví a necesitarla y me topé con que ya no descansaba donde fue creada. Por eso me di a la tarea de poner ese trabajo a buen recaudo y volverlo a traer a la vista de todos, agregando algunas cosas y complementando otras.</p>
-                        <a href="macros.html" type="button" class="btn btn-primary">Ir al documento</a>
-                    </div>
-                    <div class="col-md-5">
-                        <img src="img/codigo.jpg" width="500" height="500" class="img-fluid" loading="lazy" />
+                <div class="card">
+                    <img src="img/zone.jpg" class="card-img-top" loading="lazy" width="200" height="250">
+                    <div class="card-body">
+                        <h5 class="card-title">Opciones gráficas de los videojuegos.</h5>
+                        <p class="card-text">Aquí está un documento que me tomó mucho tiempo hacer, se trata de una lista que aún está en proceso porque la tecnología nunca se detiene. Esta lista contiene todas las opciones gráficas que puedes encontrar en los videojuegos con sus explicaciones, carga en el sistema y tecnologías.</p>
+                        <p><a class="btn btn-primary" href="#" role="button">Ir al documento &raquo;</a></p>
                     </div>
                 </div>
-            </section>
-
-            <hr class="featurette-divider">
-
-            <section>
-                <div class="row featurette slideanim" id="menu2">
-                    <div class="col-md-7 order-md-2">
-                        <h2 class="featurette-heading">Opciones gráficas de los videojuegos. <span class="text-muted">(Por fin alguien lo explica.) </span></h2>
-                        <p class="lead">Aquí está un documento que me tomó mucho tiempo hacer, se trata de una lista que aún está en proceso porque la tecnología nunca se detiene. Esta lista contiene todas las opciones gráficas que puedes encontrar en los videojuegos con sus explicaciones, carga en el sistema y tecnologías.</p>
-                        <a href="macros.html" type="button" class="btn btn-primary">Ir al documento</a>
-                    </div>
-                    <div class="col-md-5 order-md-1">
-                        <img src="img/inside.jpg" width="500" height="500" class="img-fluid" loading="lazy" />
-                    </div>
-                </div>
-            </section>
-
-            <hr class="featurette-divider">
-
-            <section>
-                <div class="row featurette slideanim" id="menu3">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">¿Y que habrá en el tercer enlace? <span class="text-muted">Pues nada! </span></h2>
-                        <p class="lead">En este apartado no hay nada aún, está esperando ser llenado con alguna cosa curiosa o algún otro tipo de información. Y... ¿por qué no quito este espacio? pues...Se ve bonito así que ahí se queda.</p>
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                            Ir al documento
+                <div class="card">
+                    <img src="img/inside.jpg" class="card-img-top" loading="lazy" width="200" height="250">
+                    <div class="card-body">
+                        <h5 class="card-title">¿Y que habrá en el tercer enlace?</h5>
+                        <p class="card-text">En este apartado no hay nada aún, está esperando ser llenado con alguna cosa curiosa o algún otro tipo de información. Y... ¿por qué no quito este espacio? pues...Se ve bonito así que ahí se queda.</p>
+                        <!-- Button trigger modal 1 -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop1">
+                            Ir al documento &raquo;
                         </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-body">
-                                        <strong>Te lo dije, aquí no hay nada.</strong>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-5">
-                        <img src="img/proce.jpg" width="500" height="500" class="img-fluid" loading="lazy" />
                     </div>
                 </div>
-            </section>
+            </div>
+            <hr>
+        </div>
+        <!-- /fin de seccion -->
 
-            <hr class="featurette-divider">
+        <!--Ventanas Modal abajo *****************************************************************************************-->
 
-            <!-- /END THE FEATURETTES -->
-        </div><!-- /.container -->
+        <!-- Modal 1-->
+        <div class="modal fade" id="staticBackdrop1" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
 
-        <!--    Boton de ir arriba-->
-        <div id="button-up">
-            <svg class="bi bi-arrow-up-short" width="2.5em" height="2.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M8 5.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5z" />
-                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8 5.707 5.354 8.354a.5.5 0 1 1-.708-.708l3-3z" />
-            </svg>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                       <p>¿Aquí no hay nada... o tal vez si?</p>
+                        <p>Estilo antiguo de la página: <a href="indexold.html" target="_blank">Enlace</a></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!--    FOOTER -->
-        <footer class="container text-center">
-            <p>Desarrollo hecho por <span style="font-family: 'Alex Brush', cursive; font-size: 27px">Daniel Bautista P.</span> &middot; Tecnólogo de Sistemas, 2019-2021.</p>
-            <div id="google_translate_element"></div>
-            <script type="text/javascript">
-                function googleTranslateElementInit() {
-                    new google.translate.TranslateElement({
-                        pageLanguage: 'es'
-                    }, 'google_translate_element');
-                }
+        <!--Ventanas Modal arriba *****************************************************************************************-->
 
-            </script>
 
-            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        </footer>
+        <br>
     </main>
 
-    <!--    jquery para efecto y boostrap-->
+    <!--    Boton de ir arriba-->
+    <div id="button-up">
+        <svg class="bi bi-arrow-up-short" width="2.5em" height="2.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 5.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5z" />
+            <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8 5.707 5.354 8.354a.5.5 0 1 1-.708-.708l3-3z" />
+        </svg>
+    </div>
+
+    <footer class="container text-center">
+        <div class="row">
+            <div class="col-6">
+                <p>Desarrollo por <span style="font-family: 'Alex Brush', cursive; font-size: 27px">Daniel Bautista P.</span> &middot; Tecnólogo de Sistemas, 2021.</p>
+            </div>
+            <div class="col-6">
+                <div id="google_translate_element"></div>
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({
+                            pageLanguage: 'es'
+                        }, 'google_translate_element');
+                    }
+
+                </script>
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+        </div>
+    </footer>
+
+    <!--    Jquery para efecto y boostrap-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--    Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
