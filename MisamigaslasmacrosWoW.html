@@ -9,7 +9,8 @@
     <title>Geek Dungeon!</title>
 
     <!--Bootstrap-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <!--normalizar estilos-->
     <link href="css/css/normalize.css" rel="stylesheet">
     <!--fonts-->
@@ -33,7 +34,6 @@
                 font-size: 3.5rem;
             }
         }
-
     </style>
     <!-- Custom styles for this template -->
     <link href="css/jumbotron.css" rel="stylesheet">
@@ -42,8 +42,10 @@
 <body>
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="barranav">
-        <a class="navbar-brand" href="index.html" style="font-family: 'Cookie', cursive; font-size: xx-large; color: gold;">Geek Dungeon</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html"
+            style="font-family: 'Cookie', cursive; font-size: xx-large; color: gold;">Geek Dungeon</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPrincipal"
+            aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarPrincipal">
@@ -74,693 +76,35 @@
             <!-- /.container -->
         </div><!-- /.jumbotron -->
 
-        <!-- nueva seccion -->
+        <!-- nueva sección -->
         <div class="container">
 
-                ¿Qué es una macro?
-                ¿Qué se puede hacer con una macro? ¿Y qué no se puede?
-                ¿Dónde se guardan las macros?
-                ¿Cómo hacer una macro?
-                Tipos y Estructura de macros
-                Macros tipo texto
-                Macros de habilidades
-                Macros de equipo
-                Macros tipo texto
-                Acción
-                %t
-                %f
-                CANALES
-                Utilización
-                Lista de canales
-                Macros de habilidades
-                Acciones
-                Acciones de combate
-                CAST
-                CASTSEQUENCE
-                Acciones Sueltas
-                STOPCASTING
-                CLEARTARGET
-                FOCUS
-                CLEARFOCUS
-                STOPMACRO
-                CANCELAURA
-                CANCELFORM
-                STARTATTACK
-                STOPATTACK
-                Acciones De Mascotas
-                PETAGGRESSIVE
-                PETATTACK
-                PETDEFENSIVE
-                PETFOLLOW
-                PETPASSIVE
-                PETSTAY
-                Acciones Generales
-                #SHOW
-                #SHOWCOOLDOWN
-                #SHOWTOOLTIP
-                La ! en los hechizos
-                Condiciones
-                Condiciones de objetivo
-                HARM
-                HELP
-                Condiciones de botón
-                BUTTON 13
-                MODIFIER 14
-                Condiciones de estado 14
-                COMBAT 14
-                DEAD 14
-                EXISTS 14
-                STEALTH 14
-                STANCE o FORM 15
-                Condiciones de a qué objetivo comprobar 15
-                @TARGET 15
-                @TARGETTARGET 15
-                @FOCUS 15
-                @FOCUSTARGET 16
-                @PLAYER 16
-                @MOUSEOVER 16
-                @MOUSEOVERTARGET 16
-                @NOMBRE 16
-                Condiciones de terreno 17
-                FLYABLE 17
-                FLYING 17
-                INDOORS 17
-                OUTDOORS 17
-                MOUNTED 17
-                SWIMMING 17
-                Condiciones de hechizo 18
-                CHANNELING 18
-                Macros De Equipo 18
-                Acciones 18
-                USE 18
-                EQUIP 19
-                EQUiPSLOT 19
-                EQUiPSET 19
-                Macros De Mascotas Mansas 20
-                SUMMONPET 20
-                RANDOMFAVORITEPET 20
-                Agradecimientos 20
-                Nota final 20
-
-
-
-
-
-            ¿Qué es una macro?
-            Una macro es una forma de "automatizar" legalmente ciertas acciones en el juego mediante un código hecho por Blizzard exclusivamente para esto (o sea, que estas macros no servirán para otros juegos). Tampoco tengáis miedo en experimentar con las macros, puesto que no es posible hacer macros ilegales.
-
-
-            ¿Qué se puede hacer con una macro? ¿Y qué no se puede?
-            Las macros permiten hacer aquellas acciones que requieran la presencia de una habilidad, frase, emociones o incluso equipar y desequipar objetos.
-
-            Lo que nunca hará una macro es jugar por ti. Eso incluye la elección de hechizos automáticamente, caminar o recoger objetos de los cadáveres. Definitivamente no hará nada que requiera tu intervención directa.
-
-            Si encuentras un programa o addon que haga esto por ti, es ilegal y te banearían la cuenta. Siendo más específicos, esta es la lista de cosas que no puedes hacer con macros:
-
-            Una macro NO PUEDE COMPROBAR SI UN HECHIZO ES USABLE.
-            Una macro no podrá comprobar si un hechizo está en tiempo de reutilización
-            Cualquier condición que se te ocurra que te ahorraría esfuerzo de elección de botones, entonces no se puede hacer (por ejemplo, comprobar la vida que le queda a un jefe, comprobar el maná que tenga, qué hechizo está lanzando, su especialización de talentos, beneficio activo, etc.)
-            Jamás podrás hacer que una macro lance dos hechizos simultáneamente salvo que éstos se anulen entre sí (que son muy pocos hechizos) o que no compartan tiempo de reutilización global (por ejemplo, sí puedes hacer una macro con "Enfoque interno" y "Sanación relámpago" pero nunca con "Punición" y "Fuego sagrado" teniendo en cuenta que ambas condiciones de ejecución de ambos hechizos son correctas a la vez).
-
-            ¿Dónde se guardan las macros?
-            Un dato interesante a saber es que las macros las guarda el servidor y además se genera una copia en tu propio ordenador. Así si entras al WoW desde varios ordenadores, siempre tendrás a tu disposición tus macros preferidas.
-
-
-            ¿Cómo hacer una macro?
-            La macro más sencilla es la que dice una frase o expresa una emoción y aprenderemos a hacerla en este punto. Sigue la guía paso a paso:
-
-
-            Escribe /macro o puedes abreviar y escribir solo /m, también puedes acceder al menú de macros mediante el menú principal dentro del juego.
-            Dale a "Nuevo"
-            Ponle un nombre a la macro (se ordenan alfabéticamente).
-            Elige un icono a tu gusto
-            Dale a Aceptar
-            Escribe en la ventana de la izquierda, la que está debajo de las macros que tengas, /lol
-            Arrastra el icono desde la lista de macros a una casilla de tu barra de acción.
-
-            Ahora al pulsar sobre la macro harás directamente /lol lo cual sirve para reírte de tus enemigos rápidamente. Seguro que lo has visto muchas veces.
-
-
-            Tipos y Estructura de macros
-            Las macros tienen una estructura estándar que podrás seguir prácticamente siempre. Veamos un ejemplo para una macro con dos hechizos y condiciones distintas para cada hechizo:
-
-
-            /acción [condición 1, condición 2] habilidad; [condiciones] habilidad;
-
-
-            Además, las macros se pueden dividir en 4 tipos; las macros de texto (como la que viste en el punto 5), las macros de habilidades (que son las más usuales y dónde haremos más hincapié), las macros hechas con código LUA (que son aquellas macros hechas con código de Addons, que no explicaré en esta guía por su complejidad) y las macros relacionadas con el equipo.
-
-
-            Macros tipo texto
-            Las macros tipo texto son aquellas que tienen como finalidad anunciar algo por algún canal. La estructura es:
-
-
-            /acción /canal texto
-
-
-            Macros de habilidades
-            Estas macros son aquellas que necesitan un comando que le diga qué hacer y bajo qué condiciones. Cada comando, además, puede tener ciertas estructuras que se explicarán cuando sea necesario. Pero la base a seguir es:
-
-
-            /acción [condiciones] habilidad;
-
-
-            Macros de equipo
-            Hay ciertos macros que nos permiten equiparnos objetos o usarlos. La estructura de las mismas es muy peculiar, así que las obviamos en este punto y se explicará más adelante.
-
-
-
-            Macros tipo texto
-
-            Acción
-
-            %t
-            El comando " %t " no es en sí un comando, sino una opción que cabe destacar para las macros de cat (o incluso para el chat en sí mismo). Al poner %t el juego escribirá el nombre de tu objetivo. en caso de no tener objetivo pondrá "sin objetivo".
-
-
-            /p ¡Mi objetivo se llama %t!
-
-
-            %f
-            El comando "%f" funciona igual que el "%t" pero en vez del nombre del objetivo dirá el nombre de tu focus.
-
-
-            /p ¡Mi focus se llama %f!
-
-
-            CANALES
-
-            Utilización
-            A la hora de poner un canal se pondrá delante del texto. En el ejemplo siguiente donde pone CANAL es lo que deberás sustituir por el apartado siguiente:
-
-
-            /CANAL ¡Hola, esto es un texto!
-
-
-
-            Lista de canales
-
-            s: Decir
-            g: Clan
-            p: Grupo
-            ra: Banda
-            rw: Aviso de Banda
-            bg: Campo de batalla
-            Macros de habilidades
-
-            Acciones
-
-            Acciones de combate
-
-            CAST
-            Esta es la macro principal, la que más usarás (se puede cambiar "cast" por "lanzar" si juegas en castellano. Pero yo no lo recomiendo puesto que cast seguro que no falla y además ocupa menos caracteres). Básicamente sigue la siguiente estructura:
-
-
-            /cast [condiciones] Habilidad;
-
-
-            CASTSEQUENCE
-            En esencia funciona igual que el CAST pero tiene otra finalidad. Su función no es la de lanzar un hechizo, sino la de concatenar varios hechizos bajo las mismas condiciones. La diferencia es que la estructura es relativamente diferente y usa unas condiciones diferentes.
-
-
-            /castsequence [condiciones] reset=condiciones Habilidad 1, Habilidad 2, Habilidad 3;
-
-
-            Después del reset, donde pone condiciones, podemos añadir lo siguiente: un número (que equivaldría a segundos), target (cambio de objetivo), combat (cuando salgas o entres en combate), shift, alt, ctrl (cuando pulses cualquiera de estas teclas). Puedes poner todos los condicionantes que quieras separados con una /. Cuando se cumpla alguna de las condiciones la macro volverá a su punto de partida. Por supuesto también volverá a su punto de partida cuando llegue a la última habilidad.
-
-            Edito: Desde hace un tiempo el castsequence ahora también permite condiciones normales.
-
-
-
-
-
-            Acciones Sueltas
-
-            STOPCASTING
-            Este comando corta cualquier hechizo que estés lanzando:
-
-
-            /stopcast [condiciones]
-
-
-            CLEARTARGET
-            Permite limpiar el objetivo que tengamos:
-
-
-            /cleartarget [condiciones]
-
-
-            FOCUS
-            Permite crear un objetivo "focus":
-
-
-            /focus [condiciones]
-
-
-            CLEARFOCUS
-            Permite limpiar nuestro objetivo "focus":
-
-
-            /clearfocus [condiciones]
-
-
-            STOPMACRO
-            Permite detener una macro:
-
-
-            /stopmacro [condiciones]
-
-
-            CANCELAURA
-            Permite quitarse un beneficio:
-
-
-            /cancelaura [condiciones] beneficio;
-
-
-
-            CANCELFORM
-            Permite quitarse una forma. Las "formas" son aquellas habilidades que te habilitan una barra alternativa (como la "Forma de las sombras" del sacerdote). La excepción a este tipo de formas son los guerreros ya que tienen que estar en una forma obligatoriamente.
-
-
-            /cancelform [condiciones]
-
-
-            STARTATTACK
-            Permite empezar a atacar. La diferencia con "atacar" de tu libro de hechizos es que ese "atacar" ataca si no estás atacando y si estás atacando deja de atacar. Con este comando atacas sí o sí:
-
-
-            /startattack [condiciones]
-
-
-            STOPATTACK
-            Mismo caso que el anterior, pero obliga a parar de atacar:
-
-
-            /stopattack [condiciones]
-
-
-            Acciones De Mascotas
-
-            PETAGGRESSIVE
-            Pone a tu mascota en agresivo:
-
-            /petaggressive [condiciones]
-
-
-            PETATTACK
-            Envía a tu mascota a atacar:
-
-            /petattack [condiciones]
-
-
-            PETDEFENSIVE
-            Pone a tu mascota en defensivo:
-
-            /petdefensive [condiciones]
-
-
-            PETFOLLOW
-            Pone a tu mascota en seguirte, contrario a "Petstay":
-
-            /petfollow [condiciones]
-
-
-            PETPASSIVE
-            Pone a tu mascota en pasivo:
-
-            /petpassive [condiciones]
-
-
-            PETSTAY
-            Deja quieta a tu mascota en el sitio, contrario a "Petfollow":
-
-            /petstay [condiciones]
-
-
-
-            Acciones Generales
-
-            #SHOW
-            Muestra el icono de la primera habilidad de la macro. Puedes añadirle después del "show" el nombre de un hechizo, el nombre de un objeto, la "Bagid Slot" o la "InvSlot". En cualquiera de los casos mostrará el icono que haya en esos lugares.
-
-            Nota: si bien se puede poner un objeto por su posición en las bolsas o su lugar en una mochila, es realmente tedioso dar con el que corresponde y además es poco práctico ya que al acceder al banco cambia todos esos números cambiando también el icono correspondiente.
-
-
-            #show [condiciones] Habilidad/objeto
-
-
-            #SHOWCOOLDOWN
-            Es igual que el "Show" pero además muestra el tiempo de reutilización de la primera habilidad después del "Showcooldown" o bien de la primera habilidad de la macro en caso de no tener nada el "showcooldown":
-
-
-            #showcooldown [condiciones] Habilidad/objeto
-
-
-            #SHOWTOOLTIP
-            Es igual que el "Showcooldown" pero además muestra la descripción de la habilidad que muestra el "showtooltip".
-
-            NOTA: Para que te muestren los iconos debes escoger como icono el "?" rojo.
-
-
-            #showtooltip [condiciones] Habilidad/objeto
-
-
-            La ! en los hechizos
-            Muchos hechizos del World of Warcraft funcionan de distinta manera al pulsarlos una vez o la siguiente. Por ejemplo, las auras del paladín que la primera que pulses se activará y la siguiente se desactivará. Con esta acción podemos hacer que un hechizo siempre trate de activarse, en vez de activarse y desactivarse en cada pulsación:
-
-
-            /cast !Aura de reprensión
-
-
-            Condiciones
-            Cuando hablamos de una condición nos referimos a un hecho que una macro puede comprobar y actuar en consecuencia. Éstas sirven para dar a una misma macro distintos usos dependiendo de dichas condiciones. Por poner un ejemplo de la vida real una condición sería si la luz está encendida o no. Si no lo está nos levantaremos a encenderla. Y en caso de estar encendida seguramente el siguiente paso nos sentaremos. Explicado en lenguaje de macros de wow sería algo así:
-
-
-            /cast [luz apagada] Encender Luz; Sentarse;
-
-
-            Así pues, en esta sección se explicarán esas condiciones que podemos usar para que un comando actúe de una manera o de otra. Ten en cuenta que la mayoría de las opciones admiten un "no" delante para comprobar lo contrario. Por ejemplo:
-
-
-            /cast [combat] Esfumarse; Sigilo;
-
-
-            Esto haría que si estás en combate usarías Esfumarse y en cualquier otro caso usarías Sigilo.
-
-
-            /cast [nocombat] Sigilo; Esfumarse;
-
-
-            Esto haría que si no estás en combate usarías Sigilo y en cualquier otro caso harías Esfumarse.
-
-
-            Como puedes ver el resultado de este ejemplo es el mismo al final, pero puede que en ciertas circunstancias quieras hacer cosas distintas y tengas que comprobar cosas distintas. ¡Todo depende de tu imaginación!
-
-
-            Condiciones de objetivo
-            Puedes poner estas condiciones en los mismos corchetes, pero no tendría ninguna lógica ya que son antónimas entre sí:
-
-
-            HARM
-            Comprueba si tu objetivo actual es enemigo.
-
-
-            /cast [harm] Punición; Sanación relámpago;
-
-
-            HELP
-            Comprueba si tu objetivo actual es amigo.
-
-
-            /cast [help] Sanación relámpago; Punición;
-
-
-            Condiciones de botón
-            Estas condiciones pueden ponerse dentro de los mismos corchetes.
-
-
-            BUTTON
-            Comprueba si se activa la macro con algún botón en concreto del ratón: 1 es Click izquierdo, 2 click derecho, 3 Click central y a partir de ahí tantos como botones tenga tu ratón. Tendrás que probar a cual corresponde cual. Ten en cuenta que puedes cambiar BUTTON por BTN.
-
-
-            /cast [btn:2] Sanación Superior; Sanación relámpago;
-
-
-            MODIFIER
-            Comprueba si mientras se activa la macro estamos pulsando alguna de las siguientes teclas: Alt, Ctrl o Shift. Ten en cuenta que puedes cambiar MODIFIER por MOD.
-
-            /cast [mod:ctrl] Sanación Superior; Sanación relámpago
-
-
-            Condiciones de estado
-            Estas condiciones pueden ponerse dentro de los mismos corchetes.
-
-
-            COMBAT
-            Comprueba si estás con combate.
-
-
-            /cast [combat] Esfumarse; Sigilo;
-
-
-            DEAD
-            Comprueba si el objetivo está muerto.
-
-
-            /cast [dead] Canibalismo; Punición;
-
-
-            EXISTS
-            Comprueba si el objetivo existe. (No se me ocurre ningún ejemplo simple realista, así que dejo lo básico)
-
-
-            /cast [exists] Sanación Relámpago;
-
-
-
-            STEALTH
-            Comprueba si estás en sigilo
-
-
-            /cast [stealth] Emboscada; Puñalada;
-
-
-            STANCE o FORM
-            Comprueba la estancia en la que estás. Por estancia hablamos aquellos estados que activan barras distintas al usarla (como las transformaciones de druida o las actitudes de guerrero. Las excepciones son el Ángel del Sacerdote, lobo del chamán y la forma de demonio del brujo.
-
-
-            /cast [Stance:1] Abrumar; [Stance:3] Torbellino; Golpe heroico;
-
-
-            /cast [stance:1/3] Golpe heroico; [stance:2] Provocar;
-
-
-
-            Condiciones de a qué objetivo comprobar
-
-            Estas condiciones son algo extrañas. Realmente no comprueban nada, simplemente es la aclaración de a quién va dirigido el hechizo resultante de la macro.
-
-
-            @TARGET
-            El hechizo va dirigido a tu objetivo.
-
-
-            /cast [@target] Sanación relámpago;
-
-
-            @TARGETTARGET
-            El hechizo va dirigido al objetivo de tu objetivo.
-
-
-            /cast [@targettarget] Sanación relámpago;
-
-
-            @FOCUS
-            El hechizo va dirigido a tu focus.
-
-
-            /cast [@focus] Sanación relámpago;
-
-
-            @FOCUSTARGET
-            El hechizo va dirigido al objetivo de tu focus.
-
-
-            /cast [@focustarget] Sanación relámpago;
-
-
-            @PLAYER
-            El hechizo va dirigido a ti mismo.
-
-
-            /cast [@player] Sanación relámpago;
-
-
-            @MOUSEOVER
-            El hechizo va dirigido al personaje que esté debajo de tu puntero que no seas tú. Sirve con las interfaces de banda tanto del propio wow como el grid o similares. También sirve, por supuesto, a los personajes en pantalla directamente.
-
-
-            /cast [@mouseover] Sanación relámpago;
-
-
-            @MOUSEOVERTARGET
-            El hechizo va dirigido al objetivo del personaje que esté debajo de tu puntero.
-
-
-            /cast [@mouseovertarget] Sanación relámpago;
-
-
-            @NOMBRE
-            El hechizo irá dirigido al jugador o enemigo que pongas en NOMBRE. Dicho objetivo debe estar en tu grupo o banda.
-
-
-            /cast [@Menganito] Secretos del oficio;
-
-
-
-            Condiciones de terreno
-
-            FLYABLE
-            Comprueba si el mapa donde estás puedes volar:
-
-
-            /cast [flyable] Grifo dorado; Corcel blanco presto;
-
-
-            FLYING
-            Comprueba si estás volando:
-
-
-            /cast [flying] Levitar; Grifo dorado;
-
-
-            INDOORS
-            Comprueba si estás en interiores:
-
-
-            /cast [indoors] Sprint; Corcel blanco presto;
-
-
-            OUTDOORS
-            Comprueba si estás en exteriores:
-
-
-            /cast [outdoors] Corcel blanco presto; Sprint;
-
-
-            MOUNTED
-            Comprueba si estás montado. No se me ocurre ningún ejemplo simple que sea útil, así que pongo un ejemplo sin utilidad real:
-
-
-            /cast [mounted] Sigilo; Esfumarse
-
-
-
-            SWIMMING
-            Comprueba si estás nadando:
-
-
-            /cast [swimming] forma acuática;
-
-
-            Condiciones de hechizo
-
-            CHANNELING
-            Comprueba si estás canalizando un hechizo. No se me ocurre ningún ejemplo tal cual, pero sí con "nochanneling"):
-
-
-            /cast [nochanneling:Tortura mental] Tortura mental;
-
-
-            Macros De Equipo
-
-            Acciones
-
-            USE
-            Los "/use" tienen 3 usos. El más común es ponerle al lado el nombre de un objeto:
-
-
-            /use [condiciones] Nombre Del Objeto;
-
-
-            Otro uso es ponerle que use una casilla en concreto de tus bolsas (siendo las bolsas del 0 al 4 y del 1 hasta la última casilla empezando siempre por la izquierda arriba):
-
-
-            /use [condiciones] numero bolsa número hueco
-
-
-            Y finalmente el de usar el objeto equipado dependiendo de la casilla:
-
-
-            /use [condiciones] casilla
-
-
-            Este apartado realmente es el más interesante puesto que nos permite, entre otras cosas, automatizar los usos de nuestro equipo siempre que estén disponibles. Ten en cuenta que esta lista es para usar los posibles "usos" que tengan cada uno de estos objetos:
-
-
-
-
-            EQUIP
-            Te permite equipar un objeto a través de su nombre:
-
-
-            /equip [condiciones] nombre del objeto;
-
-
-            EQUiPSLOT
-            Te permite equipar un objeto en una casilla de manera específica. Ideal para cuando quieres cambiar un anillo en concreto o armas de 1 mano. La lista de "Casillas" es la misma que en el apartado anterior:
-
-
-            /equipslot [condiciones] Casilla nombre del objeto;
-
-
-            EQUiPSET
-            Te permite equipar un set que hayas guardado usando el gestor de equipamiento de Blizzard:
-
-
-            /equipset [condiciones] nombredelset;
-
-
-            Macros De Mascotas Mansas
-
-            SUMMONPET
-            Este comando invoca una mascota aleatoria de tu lista completa de mascotas mansas
-
-
-            /summonpet [condiciones]
-
-
-            RANDOMFAVORITEPET
-            Este comando invoca una mascota aleatoria de tu lista de mascotas mansas favoritas
-
-
-            /ramdomfavoritepet [condiciones]
-
-
-            Agradecimientos
-            A Wowwiki y a Google por ayudarme a buscar información al respecto cuando tenía dudas.
-            A Aliisza y Habibals por las ayudas esporádicas dadas.
-            A Oxy por comentar el dato que faltaba.
-            A Søyer por informarme del comando %f.
-            Al autor original de esta guía Rea elfa sacer 85, publicado el 14 de noviembre del 2010.
-            A @Sleiter019, recopilación de información y creación de un nuevo documento revisado, el día 25 de abril del 2020.
-
-            Nota final
-            “Que la información nunca muera, que sea de libre acceso para todos y que todos podamos disfrutar del trabajo de muchas personas que hicieron posible tantas cosas maravillosas en este mundo” @Sleiter019
-
-            Esta guía está actualizada hasta la versión 5.1 del juego original.
+            <!-- 21:9 aspect ratio -->
+            <div class="embed-responsive embed-responsive-21by9">
+                <iframe class="embed-responsive-item" src="pdf/MisamigasmacrosWoW.pdf"></iframe>
+            </div>
 
         </div>
-        <!-- /fin de seccion -->
+        <!-- /fin de sección -->
 
         <br>
     </main>
 
-    <!--    Boton de ir arriba-->
+    <!--    Botón de ir arriba-->
     <div id="button-up">
-        <svg class="bi bi-arrow-up-short" width="2.5em" height="2.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <svg class="bi bi-arrow-up-short" width="2.5em" height="2.5em" viewBox="0 0 16 16" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M8 5.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5z" />
-            <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8 5.707 5.354 8.354a.5.5 0 1 1-.708-.708l3-3z" />
+            <path fill-rule="evenodd"
+                d="M7.646 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8 5.707 5.354 8.354a.5.5 0 1 1-.708-.708l3-3z" />
         </svg>
     </div>
 
     <footer class="container text-center">
         <div class="row">
-            <div class="col-6">
-                <p>Desarrollo por <span style="font-family: 'Alex Brush', cursive; font-size: 27px">Daniel Bautista P.</span> &middot; Tecnólogo de Sistemas, 2021.</p>
-            </div>
-            <div class="col-6">
-                <div id="google_translate_element"></div>
-                <script type="text/javascript">
-                    function googleTranslateElementInit() {
-                        new google.translate.TranslateElement({
-                            pageLanguage: 'es'
-                        }, 'google_translate_element');
-                    }
-
-                </script>
-                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <div class="col-12">
+                <p>Desarrollo por <span style="font-family: 'Alex Brush', cursive; font-size: 27px">Daniel Bautista
+                        P.</span> &middot; Tecnólogo de Sistemas, 2021.</p>
             </div>
         </div>
     </footer>
@@ -768,8 +112,12 @@
     <!--    Jquery para efecto y boostrap-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--    Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+    </script>
     <!--    Sacados para acortar-->
     <script src="js/scripts.js"></script>
 
