@@ -36,7 +36,7 @@
         }
     </style>
     <!-- Custom styles for this template -->
-    <link href="css/jumbotron.css" rel="stylesheet">
+    <link href="css/portada.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target="#barranav">
@@ -86,17 +86,14 @@
         <br>
         <div class="container slideanim">
             <h2>¿Qué es esta página?</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
-                vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
-                cursus magna.</p>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
-                vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
-                cursus magna.</p>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
-                vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
-                cursus magna.</p>
-            <!-- centrada con boostrap-->
-            <img src="img/31gv.gif" class="rounded mx-auto d-block" class="img-fluid" loading="lazy">
+            <br>
+            <p>Este es un proyecto que como idea nació cerca del año 2014 pero no es hasta el año 2017 que vio la luz por así decirlo. </p>
+            <p>Al comienzo todo se basaba en un sitio de información y recopilaciones acerca de un juego online, pero al final y debido a varias influencias en mi vida diaria evoluciono para ser un sitio más variado y así poder recopilar algunos temas que podrían ser de utilidad.</p>
+            <p>En el año 2017 estuve en la posición de poder publicar un sitio enteramente hecho por mí y no depender de plataformas de blog, en donde si no pagabas no podías ajustar todo a tu gusto. Naturalmente al renunciar usar una de estas plataformas dejo de lado servicios que eran útiles pero a cambio recibo el control total de la web y ese simple hecho le da un mayor valor.</p>
+            <p>¿Por qué reunir esos temas? Es bastante fácil decir que en español casi no se suele encontrar información clara de temas informáticos, con un mundo creciente a este aspecto, se hace muy importante saber aunque sea algo básico; entonces ¿por qué no?.</p>
+            <p>Ahora en el 2021 subo todo esto en github pages en parte por curiosidad de ver como funciona todo.</p>
+            <!-- centrada con bootstrap -->
+            <img src="img/31gv.gif" class="rounded mx-auto d-block" loading="lazy">
             <hr>
         </div> <!-- /fin de sección -->
 
@@ -140,7 +137,7 @@
                             pues...Se ve bonito así que ahí se queda.</p>
                         <!-- Button trigger modal 1 -->
                         <button type="button" class="btn btn-primary" data-toggle="modal"
-                            data-target="#staticBackdrop1">
+                            data-target="#centradovertical1">
                             Ir al documento &raquo;
                         </button>
                     </div>
@@ -150,35 +147,35 @@
         </div>
         <!-- /fin de sección -->
 
-        <!--Ventanas Modal abajo *****************************************************************************************-->
+    </main>
 
-        <!-- Modal 1-->
-        <div class="modal fade" id="staticBackdrop1" data-backdrop="static" data-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
+    <!--Ventanas Modal abajo *****************************************************************************************-->
 
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>¿Aquí no hay nada... o tal vez si?</p>
-                        <p>Estilo antiguo de la página: <a href="indexold.html" target="_blank">Enlace</a></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    </div>
+    <!-- Modal 1-->
+    <div class="modal fade" id="centradovertical1" tabindex="-1" role="dialog" aria-labelledby="centradovertical1Title"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div> -->
+                <div class="modal-body">
+                    <p>¿Aquí no hay nada... o tal vez si?</p>
+                    <p>Estilo antiguo de la página: <a href="indexold.html" target="_blank">Enlace</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!--Ventanas Modal arriba *****************************************************************************************-->
+    <!--Ventanas Modal arriba *****************************************************************************************-->
 
-
-        <br>
-    </main>
+    <br>
 
     <!--    Botón de ir arriba-->
     <div id="button-up">
@@ -192,26 +189,15 @@
 
     <footer class="container text-center">
         <div class="row">
-            <div class="col-6">
+            <div class="col-12">
                 <p>Desarrollo por <span style="font-family: 'Alex Brush', cursive; font-size: 27px">Daniel Bautista
                         P.</span> &middot; Tecnólogo de Sistemas, 2021.</p>
             </div>
-            <div class="col-6">
-                <div id="google_translate_element"></div>
-                <script type="text/javascript">
-                    function googleTranslateElementInit() {
-                        new google.translate.TranslateElement({
-                            pageLanguage: 'es'
-                        }, 'google_translate_element');
-                    }
-                </script>
-                <script type="text/javascript"
-                    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-            </div>
+
         </div>
     </footer>
 
-    <!--    Jquery para efecto y boostrap-->
+    <!--    Jquery para efecto y bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--    Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
