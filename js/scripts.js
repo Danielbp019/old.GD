@@ -1,4 +1,4 @@
-/* Boton ir arriba
+/* Botón ir arriba
  -------------------------------------------------- */
 document.getElementById("button-up").addEventListener("click", scrollUp);
 
@@ -21,7 +21,7 @@ window.onscroll = function () {
     }
 }
 
-/* Effect Slideanim, the "Slideanim" class is added to give the effect to anything desired
+/* Efecto Slideanim, la clase "Slideanim" se añadió para dar el efecto a cualquier componente.
 -------------------------------------------------- */
 $(window).scroll(function () {
     $(".slideanim").each(function () {
@@ -37,7 +37,7 @@ $(window).scroll(function () {
 /* Smooth Page Scrolling
  -------------------------------------------------- */
 $(document).ready(function () {
-    // Add smooth scrolling to all links
+    // Añade smooth scrolling a los enlaces
     $("a").on('click', function (event) {
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
@@ -67,13 +67,7 @@ function deferVideo() {
         var video = this.parentElement;
         video.load();
         // uncomment if video is not autoplay
-        //video.play();
+        video.play();
     });
 }
 window.onload = deferVideo;
-
-/* Video en el jumbotron
- -------------------------------------------------- */
-$('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus')
-})
